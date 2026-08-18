@@ -1,0 +1,36 @@
+{
+  "home": {
+    "url": "/",
+    "pageTitleRegex": "ид[её]мвкино",
+    "dateTabToday": "Сегодня",
+    "movieTitle": ".movie__title",
+    "moviePoster": ".movie__poster-image",
+    "hallHeading": ".movie-seances__hall-title",
+    "sessionTimeLink": ".movie-seances__time",
+    "phpErrorText": "Fatal error, Warning:, Notice:, Deprecated:"
+  },
+  "adminLogin": {
+    "url": "/admin",
+    "heading": "Авторизация",
+    "form": ".login__form, form",
+    "emailInput": "input[type='email']",
+    "passwordInput": "input[type='password']",
+    "submitButtonTextRegex": "авторизова",
+    "logoSubtitle": "Администраторрская"
+  },
+  "adminPanel": {
+    "hallsManagementSectionHeading": "Управление залами",
+    "sessionGridSectionHeading": "Сетка сеансов",
+    "hallRow": ".conf-step__seances-hall",
+    "hallTitle": ".conf-step__seances-title",
+    "movieInTimeline": ".conf-step__seances-movie",
+    "openSalesSectionHeading": "Открыть продажи"
+  },
+  "booking": {
+    "sessionStartLabel": "Начало сеанса:",
+    "seatGridContainer": ".buying-scheme",
+    "seatCell": ".buying-scheme__chair",
+    "availableSeat": ".buying-scheme__chair:not(.buying-scheme__chair_taken):not(.buying-scheme__chair_vip)",
+    "bookButtonTextRegex": "забронировать"
+  }
+}

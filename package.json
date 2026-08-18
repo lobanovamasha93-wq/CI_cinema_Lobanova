@@ -1,0 +1,17 @@
+{
+  "name": "fs21-diplom-cypress-tests",
+  "version": "1.0.0",
+  "description": "Cypress-тесты для приложения бронирования билетов в кино",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run",
+    "test:home": "cypress run --spec cypress/e2e/home.cy.js",
+    "test:admin-login": "cypress run --spec cypress/e2e/admin-login.cy.js",
+    "test:booking": "cypress run --spec cypress/e2e/booking.cy.js"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "happyPath": {
+    "description": "Валидные данные администратора из README тестируемого проекта",
+    "email": "qamid@qamid.ru",
+    "password": "qamid",
+    "expectedResult": "success"
+  },
+  "sadPath": [
+    {
+      "description": "Верный e-mail, неверный пароль",
+      "email": "qamid@qamid.ru",
+      "password": "wrongPassword123",
+      "expectedResult": "error"
+    },
+    {
+      "description": "Несуществующий e-mail",
+      "email": "not-existing-user@qamid.ru",
+      "password": "qamid",
+      "expectedResult": "error"
+    },
+    {
+      "description": "Пустые поля формы",
+      "email": "",
+      "password": "",
+      "expectedResult": "error"
+    }
+  ]
+}
