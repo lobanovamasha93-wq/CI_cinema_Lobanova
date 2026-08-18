@@ -1,17 +1,20 @@
 {
-  "name": "fs21-diplom-cypress-tests",
+  "name": "cypress-cinema-tests",
   "version": "1.0.0",
-  "description": "Cypress-тесты для приложения бронирования билетов в кино",
-  "private": true,
+  "description": "E2E tests for cinema booking application",
+  "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test": "cypress run",
-    "test:home": "cypress run --spec cypress/e2e/home.cy.js",
-    "test:admin-login": "cypress run --spec cypress/e2e/admin-login.cy.js",
-    "test:booking": "cypress run --spec cypress/e2e/booking.cy.js"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:chrome": "cypress run --browser chrome",
+    "test:edge": "cypress run --browser edge",
+    "test:parallel-browsers": "npx concurrently \"npm run test:chrome\" \"npm run test:edge\"",
+    "test:folder1": "cypress run --spec \"cypress/e2e/folder1/**/*\"",
+    "test:folder2": "cypress run --spec \"cypress/e2e/folder2/**/*\"",
+    "test:parallel-folders": "npx concurrently \"npm run test:folder1\" \"npm run test:folder2\""
   },
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "concurrently": "^8.2.2",
+    "cypress": "^13.0.0"
   }
 }
